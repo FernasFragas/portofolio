@@ -1,0 +1,23 @@
+{
+  "name": "web_portofolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "portofolio_app.js",
+  "scripts": {
+    "start": "node portofolio_app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando Fragateiro",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "eslint": "^8.23.1",
+    "eslint-plugin-vue": "^9.5.1",
+    "express": "^4.18.1"
+  },
+  "dependencies": {
+    "hbs": "^4.2.0",
+    "node-fetch": "^3.2.10"
+  }
+}

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Ms+Madi&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Lobster", 'Segoe UI';
+    color: #101010
+}
+.container {
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1d25;
+}
+date-container {
+    color: rgb(206, 32, 32);
+    font-family: "Ms+Madi", 'Segoe UI';
+    background-color:white;
+    font-size: 20px;
+    font-weight: 150;
+    line-height: 20px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+ul1 {
+    display: flex;
+    list-style-type: none;
+    width: auto;
+    justify-content: space-between;
+}
+.timeline-content h1 {
+    font-family: "Ms+Madi", 'Segoe UI';
+    color: rgba(197, 40, 40, 0.713);
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.timeline-content h2 {
+    font-family: "Ms+Madi", 'Times New Roman';
+    color: rgb(197, 40, 40);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+.timeline-content p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 15px;
+    color: white;
+}
+.timeline {
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.timeline-content {
+    width: 100%;
+    height: auto;
+}
+.timeline ul li {
+    padding: 20px;
+    background-color:   #1c1826;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.timeline ul li:last-child{
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .timeline::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        left: 50%;
+        width: 2px;
+        transform: translate(-50%);
+        background-color: red;
+    }
+    .timeline h1 {
+        font-size: 26px; 
+    }
+    .timeline-content h2 {
+        line-height: 22px; 
+    }
+    .timeline ul li {
+        width: 40%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .timeline date-container {
+        font-size: 14px;
+        margin-left: 7px;
+    }
+    .timeline ul li:nth-child(odd) {
+        float: right;
+        clear: left;
+        transform: translateX(10%);
+        border-radius: 0px 30px 30px 30px;
+    }
+    .timeline ul li:nth-child(even) {
+        float: left;
+        clear: right;
+        transform: translateX(-10%);
+        border-radius: 30px 0px 30px 30px;
+    }
+    .timeline ul li::after {
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: red;
+        border-radius: 50%;
+        top: 0;
+    }
+    .timeline ul li:nth-child(odd)::after {
+        transform: translate(-50%, -55%);
+        left: -10%;
+    }
+    .timeline ul li:nth-child(EVEN)::after {
+        transform: translate(50%, -55%);
+        right: -10%;
+    }
+    .timeline ul li:hover:after {
+        background-color: #A9A9A9;
+    }
+}
+
+.timeline-hero-area {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.timeline-hero-text {
+    margin-left: 80px;
+    margin-bottom: 50px;
+    color: #1c1d25;
+}
+.timeline-hero {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    height: 70vh;
+    color: #1c1d25;
+    font-size: 40px;
+}
+.button {
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: red;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #ee4242;
+}
+
+.button:active {
+    background-color: #A9A9A9;
+    color: #808080;
+}
+.timeline-hero ul {
+    display: flex;
+    list-style-type: none;
+    width: 1150px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.timeline-hero li {
+    text-decoration: none;
+}
+
+.timeline-hero h1 {
+    font-size: 90px;
+    margin: 0;
+}
+
+.timeline-hero h2 {
+    font-size: 50px;
+}
+
+.timeline-hero p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+.timeline-hero a {
+    text-decoration: none;
+    color: white;
+}
+.timeline-hero timeline-title {
+    font-size: 60px;
+    font-family: "Lobster", 'Segoe UI';
+    color: #1c1d25;
+}
